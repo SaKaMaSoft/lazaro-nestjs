@@ -1,7 +1,7 @@
 import { Controller, Get } from '@nestjs/common';
 import { ApiResponse } from '@nestjs/swagger';
 import { ShipsService } from './ships.service';
-import { ShipsDTO } from './ships.entity';
+import { ShipsRO } from './ship.interface';
 
 @Controller('ships')
 export class ShipsController {
@@ -10,7 +10,7 @@ export class ShipsController {
 
     @ApiResponse({status: 200, description: 'Return all ships'})
     @Get()
-    async findAll(): Promise<ShipsDTO> {
+    async findAll(): Promise<ShipsRO> {
       return await this.shipsService.findAll();
     }
 }
