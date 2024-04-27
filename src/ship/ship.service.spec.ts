@@ -1,8 +1,11 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { ShipsService } from './ships.service';
+import { ShipsService } from './ship.service';
+import axios from 'axios';
+
 
 describe('ShipsService', () => {
   let service: ShipsService;
+  // jest.mock('axios');
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
@@ -15,4 +18,7 @@ describe('ShipsService', () => {
   it('should be defined', () => {
     expect(service).toBeDefined();
   });
+
+
+
 });

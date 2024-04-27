@@ -1,4 +1,4 @@
-import { AttractionsDTO } from './attractions.entity';
+import { AttractionsDTO } from './attraction.entity';
 
 export interface AttractionsRO {
   attractions: AttractionsDTO[];

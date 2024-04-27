@@ -1,4 +1,4 @@
-import { ShipsDTO } from './ships.entity';
+import { ShipsDTO } from './ship.entity';
 
 export interface ShipsRO {
   ships: ShipsDTO[];

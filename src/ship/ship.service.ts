@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import axios from 'axios';
-import { ShipsDTO } from './ships.entity';
+import { ShipsDTO } from './ship.entity';
 import { ShipsRO } from './ship.interface';
 
 @Injectable()
